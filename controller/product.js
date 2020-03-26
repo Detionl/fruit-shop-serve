@@ -19,7 +19,7 @@ router.get('/insertProductInfo', async (ctx) => {
                 count++;
                 console.log('成功' + count);
             }).catch(err => {
-                console.log('失败啦:' + error);
+                console.log('失败啦:' + err);
             });
         });
     });

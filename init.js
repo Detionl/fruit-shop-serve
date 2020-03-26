@@ -11,14 +11,14 @@ exports.initSchemas = () => {
 // 连接数据库方法
 exports.connect = () => {
     // 连接数据库
-    mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
+    mongoose.connect(db, { useNewUrlParser: true });
     // 监听数据库连接
     mongoose.connection.on('disconnected', () => {
         mongoose.connect(db);
     });
     // 数据库出现错误
-    mongoose.connection.on('error', err => {
-        console.log(err);
+    mongoose.connection.on('error', error => {
+        console.log(error);
         mongoose.connect(db);
     });
 
