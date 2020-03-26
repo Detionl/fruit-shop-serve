@@ -1,0 +1,25 @@
+[{
+    "typeId": 1,
+    "typeName": "柑橘"
+}, {
+    "typeId": 2,
+    "typeName": "核果"
+}, {
+    "typeId": 3,
+    "typeName": "浆果"
+}, {
+    "typeId": 4,
+    "typeName": "仁果"
+}, {
+    "typeId": 5,
+    "typeName": "瓜果"
+}, {
+    "typeId": 6,
+    "typeName": "干果"
+}, {
+    "typeId": 7,
+    "typeName": "其他"
+}, {
+    "typeId": 8,
+    "typeName": "热卖"
+}]
