@@ -11,7 +11,7 @@ exports.initSchemas = () => {
 // 连接数据库方法
 exports.connect = () => {
     // 连接数据库
-    mongoose.connect(db, { useNewUrlParser: true });
+    mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
     // 监听数据库连接
     mongoose.connection.on('disconnected', () => {
         mongoose.connect(db);
