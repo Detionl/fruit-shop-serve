@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = 'mongodb://localhost/shop';
+const db = 'mongodb://root:123456@localhost/shop';
 
 // 引入 schema
 const glob = require('glob');
