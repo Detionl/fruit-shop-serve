@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const db = 'mongodb://root:123456@localhost/shop';
-
+// const db = 'mongodb://localhost/shop';
+const db = 'mongodb://root:123456@120.24.232.12:27017/admin';
+// mongodb://root:123456@localhost/shop
 // 引入 schema
 const glob = require('glob');
 const path = require('path');
