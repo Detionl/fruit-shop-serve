@@ -87,4 +87,28 @@ router.get('/getDetail', async (ctx) => {
     })
 });
 
+
+//删除用户订单
+router.post('/delShop', async (ctx) => {
+
+    const shopId = ctx.request.body.shopId;
+    // console.log("打印购物车商品id")
+    // console.log(cartId)
+    // 引入model
+    const Product = mongoose.model('Product');
+
+    await Product.deleteOne({ _id: shopId }).exec().then(() => {
+        ctx.body = {
+            code: 200,
+            message: '删除成功'
+        };
+    }).catch(err => {
+        console.log(err);
+        ctx.body = {
+            code: 500,
+            message: err
+        };
+    })
+});
+
 module.exports = router;
