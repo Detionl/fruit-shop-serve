@@ -45,5 +45,5 @@ app.use(async (ctx) => {
 })
 
 app.listen(3000, () => {
-    console.log('start shop server');
+    console.log('打开水果商城服务器');
 });
