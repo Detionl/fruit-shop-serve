@@ -12,6 +12,7 @@ exports.initSchemas = () => {
 // 连接数据库方法
 exports.connect = () => {
     // 连接数据库
+    mongoose.set('useCreateIndex', true);
     mongoose.connect(db, { useNewUrlParser: true });
     // 监听数据库连接
     mongoose.connection.on('disconnected', () => {
